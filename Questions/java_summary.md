@@ -22,7 +22,7 @@
 **1. HashMap和Hashtable的区别**
 
 - [x] Hashtable是基于陈旧的Dictionary的Map接口的实现，而HashMap是基于哈希表的Map接口的实现
-- [x] 从方法上看，HashMap去掉了Hashtable的contains方法
+- [x] 从方法上看，HashMap去掉了Hashtable的contains方法``
 - [x] HashTable是同步的(线程安全)，而HashMap线程不安全，效率上HashMap更快
 - [x] HashMap允许空键值，而Hashtable不允许
 - [x] HashMap的iterator迭代器执行快速失败机制，也就是说在迭代过程中修改集合结构，除非调用迭代器自身的remove方法，否则以其他任何方式的修改都将抛出并发修改异常。而Hashtable返回的Enumeration不是快速失败的。
@@ -53,7 +53,7 @@ Map - ConcurrentHashMap
 
 3.1 List集合和Set集合
 
-List中元素存取是有序的、可重复的；Set集合中元素是无序的，不可重复的。
+List中元素存取是有序的、可重复的；Set集合中元素是无序的，不可重复的
 
 CopyOnWriteArrayList:COW的策略，即写时复制的策略。适用于读多写少的并发场景
 
